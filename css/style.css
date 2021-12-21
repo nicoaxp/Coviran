@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg-verdeo {
+    background-color: #285b35;
+}
+.bg-verdec {
+    background-color: #297b3c;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 0 16px grey;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.p-10-30 {
+    padding: 10px 30px;
+}
+.p-20-30 {
+    padding: 20px 30px;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.justify-content-around {
+    justify-content: space-around;
+}
+.align-items-center {
+    align-items: center;
+}
+.gap-10 {
+    column-gap: 10px;
+}
+.text-white a {
+    text-decoration: none;
+    color: white;
+}
+/* Para que un menu horizontal desplegable funcione */
+nav ul, nav li {
+    padding: 0;
+    margin: 0;
+}
+nav li {
+    padding-left: 30px;
+    list-style-type: none; /*Para quitar los puntos*/
+    position: relative;
+    float: left;
+    margin-right: 16px;
+    color: grey;
+}
+nav ul li ul { /*El submmenú se esconde */
+    display: none;
+    position: absolute;
+    padding-top: 20px;
+    background-color: white;
+    margin-left: -10px;
+}
+nav ul li:hover ul {
+    display: block;
+}
+/*Los elementos de abajo no quiero que se separen por la derecha*/
+nav ul li ul li {
+    margin-right: 0;
+    width: 300px;
+    border-bottom: solid 1px grey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    padding-left: 10px;
+}
+
+.cb {
+    clear: both;
+}
+.mr-30 {
+    margin-right: 30px;
+}
+.w-100 {
+    width: 100%;
+}
+nav ul li:hover {
+    color: #285b35;
+}
+nav ul li ul li:hover{
+    color: black;
+    background-color: grey;
+}
+.card {
+    box-shadow: 0 0 16px grey;
+    width: 30%;
+}
+.card p {
+    text-align: center;
+    font-size: 22px;
+    padding: 0 10px;
+}
+
+.enlaces {
+    font-size: 20px;
+    color: white;
+}
+.menu { /*Para el tamaño de cada una de las cajas*/
+    width: 24%;
+}
+
+footer p {
+    margin: 0 auto;
+    color: white;
+}
+footer img { /*Para centrar la imagen*/
+    margin: 0 auto;
+    display: block; 
+}
