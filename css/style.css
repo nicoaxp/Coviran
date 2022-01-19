@@ -94,6 +94,7 @@ nav ul li ul li:hover{
 .card {
     box-shadow: 0 0 16px grey;
     width: 30%;
+    overflow: hidden;
 }
 .card p {
     text-align: center;
@@ -116,4 +117,36 @@ footer p {
 footer img { /*Para centrar la imagen*/
     margin: 0 auto;
     display: block; 
+}
+
+.busta {
+    background-image: url(../img/coviran-bustamante.png);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    height: 459px;
+}
+
+.busta:hover img[src="img/fanta2.png"] {
+    left: 0;
+    transform: rotate(720deg);
+}
+
+
+img[src="img/fanta2.png"] {
+    position: absolute;
+    left: 1000px;
+    transition: left 2s;
+    transition: 0.5s;
+
+}
+
+.card:hover img[src="img/noticia1.jpeg"]{
+    width: 500px;
+
+
+}
+img[src="img/noticia1.jpeg"] {
+    transition: 2s;
+    
 }
